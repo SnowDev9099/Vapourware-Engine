@@ -4,7 +4,7 @@ const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
 
 // Resize canvas
-canvas.width = window.innerWidth - 300;
+canvas.width = window.innerWidth - 550;  // Adjust based on the sidebar widths
 canvas.height = window.innerHeight;
 
 // Game variables
