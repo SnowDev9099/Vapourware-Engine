@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Game Engine</title>
+    <title>Vapour Engine</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="ui">
         <div id="assetPanel">
             <h2>Assets</h2>
+            <input type="file" id="importAssets" multiple />
             <ul id="assetList">
                 <!-- Asset items will be dynamically added here -->
             </ul>
@@ -26,6 +27,8 @@
                 <!-- Inspector content will be dynamically updated here -->
             </div>
         </div>
+        <button id="saveProject">Save Project</button>
+        <input type="file" id="loadProject" />
     </div>
     <div id="gameArea">
         <canvas id="gameCanvas"></canvas>
