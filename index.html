@@ -7,31 +7,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="ui">
-        <div id="assetPanel">
-            <h2>Assets</h2>
-            <input type="file" id="importAssets" multiple />
-            <ul id="assetList">
-                <!-- Asset items will be dynamically added here -->
-            </ul>
-        </div>
-        <div id="hierarchyPanel">
-            <h2>Hierarchy</h2>
-            <ul id="hierarchyList">
-                <!-- Hierarchy items will be dynamically added here -->
-            </ul>
-        </div>
-        <div id="inspectorPanel">
-            <h2>Inspector</h2>
-            <div id="inspectorContent">
-                <!-- Inspector content will be dynamically updated here -->
-            </div>
-        </div>
+    <div id="topBar">
         <button id="saveProject">Save Project</button>
         <input type="file" id="loadProject" />
     </div>
-    <div id="gameArea">
-        <canvas id="gameCanvas"></canvas>
+    <div id="container">
+        <div id="leftSidebar">
+            <div id="assetPanel">
+                <h2>Assets</h2>
+                <input type="file" id="importAssets" multiple />
+                <ul id="assetList">
+                    <!-- Asset items will be dynamically added here -->
+                </ul>
+            </div>
+            <div id="hierarchyPanel">
+                <h2>Hierarchy</h2>
+                <ul id="hierarchyList">
+                    <!-- Hierarchy items will be dynamically added here -->
+                </ul>
+            </div>
+        </div>
+        <div id="centerPanel">
+            <canvas id="gameCanvas"></canvas>
+        </div>
+        <div id="rightSidebar">
+            <div id="inspectorPanel">
+                <h2>Inspector</h2>
+                <div id="inspectorContent">
+                    <!-- Inspector content will be dynamically updated here -->
+                </div>
+            </div>
+        </div>
     </div>
     <script src="app.js"></script>
 </body>
